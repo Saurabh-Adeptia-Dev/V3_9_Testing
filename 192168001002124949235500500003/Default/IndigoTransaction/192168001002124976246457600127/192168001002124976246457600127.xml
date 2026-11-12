@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <AU_TRANSACTION>
+        <au_OldFlowDescriptor><![CDATA[null]]></au_OldFlowDescriptor>
+        <au_retainVarXml><![CDATA[0]]></au_retainVarXml>
+        <au_id><![CDATA[192168001002124976246457600127]]></au_id>
+        <au_entityName><![CDATA[PurchaseRequisition]]></au_entityName>
+        <au_synchronized><![CDATA[0]]></au_synchronized>
+        <au_trackVariables><![CDATA[<?xml version="1.0"?><Variables></Variables>]]></au_trackVariables>
+        <au_revision><![CDATA[null]]></au_revision>
+        <au_modifiedDate><![CDATA[2014-06-09T15:41:12]]></au_modifiedDate>
+        <au_previousVersion><![CDATA[]]></au_previousVersion>
+        <au_repositoryAction><![CDATA[L]]></au_repositoryAction>
+        <au_logRetentionAction><![CDATA[S]]></au_logRetentionAction>
+        <au_realTimeConfiguration><![CDATA[null]]></au_realTimeConfiguration>
+        <au_connectDashboardLogging><![CDATA[null]]></au_connectDashboardLogging>
+        <au_modifiedBy><![CDATA[IndigoUser:127000000001107055536473900001]]></au_modifiedBy>
+        <au_childFlows><![CDATA[]]></au_childFlows>
+        <au_activeFlag><![CDATA[1]]></au_activeFlag>
+        <au_recoverable><![CDATA[1]]></au_recoverable>
+        <au_version><![CDATA[1]]></au_version>
+        <au_priority><![CDATA[NORMAL]]></au_priority>
+        <au_dataEncryptionAtRest><![CDATA[null]]></au_dataEncryptionAtRest>
+        <au_activeVersion><![CDATA[1]]></au_activeVersion>
+        <au_permissionMask><![CDATA[750]]></au_permissionMask>
+        <au_advanced><![CDATA[1]]></au_advanced>
+        <au_projectOwner><![CDATA[Default]]></au_projectOwner>
+        <au_userOwner><![CDATA[IndigoUser:192168001002124949246492700005]]></au_userOwner>
+        <au_webPdXml><![CDATA[null]]></au_webPdXml>
+        <au_creationDate><![CDATA[2009-08-08T15:14:24]]></au_creationDate>
+        <au_loggingLevel><![CDATA[ERROR]]></au_loggingLevel>
+        <au_flowDescriptor><![CDATA[<?xml version="1.0"?>
+<AdeptiaPE xmlns:version = "4.7" xmlns:j = "jelly:core" xmlns:abpm = "jelly:com.adeptia.indigo.jelly.IndigoTagLibrary" xmlns:pd = "jelly:com.adeptia.indigo.pd.ProcessDesignerTagLibrary" xmlns = "jelly:com.werken.blissed.jelly.BlissedTagLibrary" >
+	<process name = "mainProcess" var = "mainProcess" start = "startState">
+		<state name = "startState">
+			<activity>
+				<abpm:indigoGlobalVariables>
+					<abpm:params>
+					</abpm:params>
+				</abpm:indigoGlobalVariables>
+				<abpm:indigoGeneralVariables>
+					<abpm:params>
+					</abpm:params>
+				</abpm:indigoGeneralVariables>
+				<abpm:indigoActivityVariables>
+					<abpm:params>
+						<abpm:param name = "prnumber" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "workflow" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "dept_response" activityName = "ApprovePRTask" activityLabel = "demo_manager task - if reviewed by supervisor, manager has the final approval" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "dept_comments" activityName = "ApprovePRTask" activityLabel = "demo_manager task - if reviewed by supervisor, manager has the final approval" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "vendormanager" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "shipcity" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "purchase_type" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "shipstate" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "shipvia" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "company" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "part" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "vendorstate" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "location" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "vendor_number" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "priority" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "shipaddr2" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "shipaddr1" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "shipphone" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "quantity" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "shipfax" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "vendoraddr2" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "vendoraddr1" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "shipattention" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "vendorphone" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "suggested_vendor" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "shipzip" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "terms" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "vendorfax" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "attention" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "vendorcity" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "partdesc" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "sup_comments" activityName = "ReviewPRTask" activityLabel = "demo_supervisor task - Receive Purchase Requisition application form" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "sup_response" activityName = "ReviewPRTask" activityLabel = "demo_supervisor task - Receive Purchase Requisition application form" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "unitcost" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "vendorzip" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "employee" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "manager" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+						<abpm:param name = "purpose" activityName = "CorrectPRTask" activityLabel = "demouser task- correct purchase requisition" activityType = "HumanInteraction" track = "false">
+						</abpm:param>
+					</abpm:params>
+				</abpm:indigoActivityVariables>
+				<abpm:installGlobalExceptionHandlers>
+					<abpm:exceptionHandlers>
+					</abpm:exceptionHandlers>
+				</abpm:installGlobalExceptionHandlers>
+			</activity>
+		</state>
+		<state name = "state-BPMN:POOL:BPMN_POOL-17087716">
+			<activity>
+				<pd:pool type = "pool" id = "192168001144128315884364000047"/>
+				<pd:graphics x = "0.0" y = "0.0" width = "841.0" height = "271.0" owner = "FlowObject" textLabel = "Pool"/>
+				<pd:comments/>
+			</activity>
+		</state>
+		<state name = "state-BPMN:LANE:BPMN_LANE-17087717">
+			<activity>
+				<pd:lane type = "lane" id = "192168001144128315884364000048"/>
+				<pd:graphics x = "25.0" y = "0.0" width = "816.0" height = "271.0" owner = "FlowObject" textLabel = "Lane" associatedPool = "192168001144128315884364000047"/>
+				<pd:comments/>
+			</activity>
+		</state>
+		<state name = "state-BPMN:EVENT:START_EVENT-17087718">
+			<activity>
+				<pd:event type = "start" subType = "none" />
+				<pd:graphics x = "38.0" y = "23.0" width = "30.0" height = "30.0" owner = "FlowObject" textLabel = "Start Event" associatedLane = "192168001144128315884364000048" associatedPool = "192168001144128315884364000047"/>
+				<pd:graphics linkType = "UNCONTROLLED_FLOW" source = "state-BPMN:EVENT:START_EVENT-17087718" destination = "state-BPMN:TASK:BASIC_TASK-17087720" xpoints = "53,53" ypoints = "63,133" hasManualPlacement = "false" arcData = "" arrowPoints = "45,53,45,45|139,143,147,139" order = "0" startPoint = "53,53" endPoint = "53,143" direction = "3,5" owner = "Transition" textLabel = ""/>
+				<pd:comments/>
+			</activity>
+		</state>
+		<state name = "state-BPMN:EVENT:END_EVENT-17087719">
+			<activity>
+				<pd:event type = "end" subType = "none" />
+				<pd:graphics x = "761.0" y = "155.0" width = "30.0" height = "30.0" owner = "FlowObject" textLabel = "End Event" associatedLane = "192168001144128315884364000048" associatedPool = "192168001144128315884364000047"/>
+				<pd:comments/>
+			</activity>
+		</state>
+		<state name = "state-BPMN:TASK:BASIC_TASK-17087720">
+			<activity>
+				<abpm:activity type="HumanInteraction" id="192168001002124976475265400141" name="ReviewPRTask" async="false"  >
+					<abpm:params>
+						<abpm:param name="restartWaitTime">60</abpm:param>
+						<abpm:param name="restartTriesCount">0</abpm:param>
+					</abpm:params>
+				</abpm:activity>
+				<pd:graphics x = "12.0" y = "143.0" width = "123.0" height = "54.0" owner = "FlowObject" textLabel = "demo_supervisor task - Receive Purchase Requisition application form"/>
+				<pd:graphics linkType = "UNCONTROLLED_FLOW" source = "state-BPMN:TASK:BASIC_TASK-17087720" destination = "state-BPMN:GATEWAY:XOR_DATA_GATEWAY-17087722" xpoints = "145,190" ypoints = "170,170" hasManualPlacement = "false" arcData = "" arrowPoints = "192,200,192,192|166,170,174,166" order = "0" startPoint = "135,170" endPoint = "200,170" direction = "2,6" owner = "Transition" textLabel = ""/>
+				<pd:comments/>
+			</activity>
+		</state>
+		<state name = "state-BPMN:TASK:BASIC_TASK-17087721">
+			<activity>
+				<abpm:activity type="HumanInteraction" id="192168001002124976487302900143" name="CorrectPRTask" async="false"  >
+					<abpm:params>
+						<abpm:param name="restartWaitTime">60</abpm:param>
+						<abpm:param name="restartTriesCount">0</abpm:param>
+					</abpm:params>
+				</abpm:activity>
+				<pd:graphics x = "168.0" y = "60.0" width = "105.0" height = "40.0" owner = "FlowObject" textLabel = "demouser task- correct purchase requisition" associatedLane = "192168001144128315884364000048" associatedPool = "192168001144128315884364000047"/>
+				<pd:graphics linkType = "UNCONTROLLED_FLOW" source = "state-BPMN:TASK:BASIC_TASK-17087721" destination = "state-BPMN:TASK:BASIC_TASK-17087720" xpoints = "158,94,94,94" ypoints = "80,80,80,133" hasManualPlacement = "false" arcData = "94,75,10,10,180,-90" arrowPoints = "86,94,86,86|139,143,147,139" order = "0" startPoint = "168,80" endPoint = "94,143" direction = "4,5" owner = "Transition" textLabel = ""/>
+				<pd:comments/>
+			</activity>
+		</state>
+		<state name = "state-BPMN:GATEWAY:XOR_DATA_GATEWAY-17087722">
+			<activity>
+				<pd:gateway type = "EXCLUSIVE_DATA_BASED" />
+				<pd:graphics x = "200.0" y = "152.0" width = "40.0" height = "40.0" owner = "FlowObject" textLabel = "Correction needed?" associatedLane = "192168001144128315884364000048" associatedPool = "192168001144128315884364000047"/>
+				<pd:graphics linkType = "UNCONTROLLED_FLOW" source = "state-BPMN:GATEWAY:XOR_DATA_GATEWAY-17087722" destination = "state-BPMN:TASK:BASIC_TASK-17087721" xpoints = "220,220" ypoints = "140,110" hasManualPlacement = "false" arcData = "" arrowPoints = "212,220,212,212|96,100,104,96" order = "0" startPoint = "220,150" endPoint = "220,100" direction = "1,7" owner = "Transition" textLabel = "Yes"/>
+				<pd:graphics linkType = "DEFAULT_FLOW" source = "state-BPMN:GATEWAY:XOR_DATA_GATEWAY-17087722" destination = "state-BPMN:TASK:BASIC_TASK-17087723" xpoints = "250,301" ypoints = "170,170" hasManualPlacement = "false" arcData = "" arrowPoints = "303,311,303,303|166,170,174,166" order = "1" startPoint = "240,170" endPoint = "311,170" direction = "2,6" owner = "Transition" textLabel = "No"/>
+				<pd:comments/>
+			</activity>
+		</state>
+		<state name = "state-BPMN:TASK:BASIC_TASK-17087723">
+			<activity>
+				<abpm:activity type="HumanInteraction" id="192168001002124976535998200148" name="ApprovePRTask" async="false"  >
+					<abpm:params>
+						<abpm:param name="restartWaitTime">60</abpm:param>
+						<abpm:param name="restartTriesCount">0</abpm:param>
+					</abpm:params>
+				</abpm:activity>
+				<pd:graphics x = "311.0" y = "137.0" width = "128.0" height = "66.0" owner = "FlowObject" textLabel = "demo_manager task - if reviewed by supervisor, manager has the final approval" associatedLane = "192168001144128315884364000048" associatedPool = "192168001144128315884364000047"/>
+				<pd:graphics linkType = "UNCONTROLLED_FLOW" source = "state-BPMN:TASK:BASIC_TASK-17087723" destination = "state-BPMN:TASK:BASIC_TASK-17087742" xpoints = "449,470" ypoints = "170,170" hasManualPlacement = "false" arcData = "" arrowPoints = "472,480,472,472|166,170,174,166" order = "0" startPoint = "439,170" endPoint = "480,170" direction = "2,6" owner = "Transition" textLabel = ""/>
+				<pd:comments/>
+			</activity>
+		</state>
+		<state name = "state-BPMN:TASK:BASIC_TASK-17087724">
+			<activity>
+				<abpm:activity type="MailNotification" id="192168001002124976576951300152" name="NotifyPurchaseDepartment" async="false"  >
+					<abpm:params>
+						<abpm:param name="restartWaitTime">60</abpm:param>
+						<abpm:param name="restartTriesCount">0</abpm:param>
+					</abpm:params>
+				</abpm:activity>
+				<pd:graphics x = "612.0" y = "147.0" width = "110.0" height = "47.0" owner = "FlowObject" textLabel = "Email Notification to Purchase Department" associatedLane = "192168001144128315884364000048" associatedPool = "192168001144128315884364000047"/>
+				<pd:graphics linkType = "UNCONTROLLED_FLOW" source = "state-BPMN:TASK:BASIC_TASK-17087724" destination = "state-BPMN:EVENT:END_EVENT-17087719" xpoints = "732,751" ypoints = "170,170" hasManualPlacement = "false" arcData = "" arrowPoints = "753,761,753,753|166,170,174,166" order = "0" startPoint = "722,170" endPoint = "761,170" direction = "2,6" owner = "Transition" textLabel = ""/>
+				<pd:comments/>
+			</activity>
+		</state>
+		<state name = "state-BPMN:TASK:BASIC_TASK-17087742">
+			<activity>
+				<abpm:put-context-var name="PutContextVarTag1" key="message" value=" [PR Number: $$prnumber$$] [Part: $$part$$] [Part Desc: $$partdesc$$] [Unit Cost: $$unitcost$$][Ship To: $$shipaddr1$$ $$shipaddr2$$]" activityName="NotifyPurchaseDepartment"/>
+				<pd:graphics x = "480.0" y = "148.0" width = "98.0" height = "40.0" owner = "FlowObject" textLabel = "PutContextVarTag1" associatedLane = "192168001144128315884364000048" associatedPool = "192168001144128315884364000047"/>
+				<pd:graphics linkType = "UNCONTROLLED_FLOW" source = "state-BPMN:TASK:BASIC_TASK-17087742" destination = "state-BPMN:TASK:BASIC_TASK-17087724" xpoints = "588,602" ypoints = "170,170" hasManualPlacement = "false" arcData = "" arrowPoints = "604,612,604,604|166,170,174,166" order = "0" startPoint = "578,170" endPoint = "612,170" direction = "2,6" owner = "Transition" textLabel = ""/>
+				<pd:comments/>
+			</activity>
+		</state>
+		<transition from="startState" to="state-BPMN:EVENT:START_EVENT-17087718"/>
+		<transition from="state-BPMN:TASK:BASIC_TASK-17087742" to="state-BPMN:TASK:BASIC_TASK-17087724"/>
+		<transition from="state-BPMN:TASK:BASIC_TASK-17087724" to="state-BPMN:EVENT:END_EVENT-17087719"/>
+		<transition from="state-BPMN:TASK:BASIC_TASK-17087723" to="state-BPMN:TASK:BASIC_TASK-17087742"/>
+		<transition from="state-BPMN:TASK:BASIC_TASK-17087721" to="state-BPMN:TASK:BASIC_TASK-17087720"/>
+		<transition from="state-BPMN:TASK:BASIC_TASK-17087720" to="state-BPMN:GATEWAY:XOR_DATA_GATEWAY-17087722"/>
+		<transition from="state-BPMN:GATEWAY:XOR_DATA_GATEWAY-17087722" to="state-BPMN:TASK:BASIC_TASK-17087721" >
+			<guard>
+				<abpm:expression-guard >
+					[ABPM_._ESCAPE_._CDATA_._START]
+						<Rules ruleOperator = "&&"><Rule name="CheckForErrors" reason="error rules"><Expression>($$sup_response$$.equals("Disapprove"))</Expression></Rule></Rules>
+					[ABPM_._ESCAPE_._CDATA_._END]
+				</abpm:expression-guard>
+			</guard>
+		</transition>
+		<transition from="state-BPMN:GATEWAY:XOR_DATA_GATEWAY-17087722" to="state-BPMN:TASK:BASIC_TASK-17087723" >
+			<guard>
+				<abpm:scripted-guard >
+					[ABPM_._ESCAPE_._CDATA_._START]
+						return true ;
+					[ABPM_._ESCAPE_._CDATA_._END]
+				</abpm:scripted-guard>
+			</guard>
+		</transition>
+		<transition from="state-BPMN:EVENT:START_EVENT-17087718" to="state-BPMN:TASK:BASIC_TASK-17087720"/>
+	</process>
+</AdeptiaPE>]]></au_flowDescriptor>
+        <au_comments><![CDATA[null]]></au_comments>
+        <au_templateName><![CDATA[Process Designer]]></au_templateName>
+        <au_description><![CDATA[purchase requisition approval workflow]]></au_description>
+        <au_groupOwner><![CDATA[IndigoGroup:192168001002124949235500500003]]></au_groupOwner>
+    </AU_TRANSACTION>
+    <columnInfo dbtype="4">
+        <column name="au_id" type="12"/>
+        <column name="au_version" type="12"/>
+        <column name="au_previousVersion" type="12"/>
+        <column name="au_activeVersion" type="3"/>
+        <column name="au_entityName" type="12"/>
+        <column name="au_userOwner" type="12"/>
+        <column name="au_groupOwner" type="12"/>
+        <column name="au_permissionMask" type="12"/>
+        <column name="au_description" type="12"/>
+        <column name="au_comments" type="12"/>
+        <column name="au_modifiedBy" type="12"/>
+        <column name="au_creationDate" type="93"/>
+        <column name="au_modifiedDate" type="93"/>
+        <column name="au_revision" type="12"/>
+        <column name="au_synchronized" type="3"/>
+        <column name="au_projectOwner" type="12"/>
+        <column name="au_flowDescriptor" type="-1"/>
+        <column name="au_activeFlag" type="3"/>
+        <column name="au_templateName" type="12"/>
+        <column name="au_advanced" type="3"/>
+        <column name="au_loggingLevel" type="12"/>
+        <column name="au_priority" type="12"/>
+        <column name="au_repositoryAction" type="12"/>
+        <column name="au_logRetentionAction" type="12"/>
+        <column name="au_childFlows" type="-1"/>
+        <column name="au_trackVariables" type="-1"/>
+        <column name="au_retainVarXml" type="3"/>
+        <column name="au_recoverable" type="3"/>
+        <column name="au_realTimeConfiguration" type="3"/>
+        <column name="au_webPdXml" type="-1"/>
+        <column name="au_OldFlowDescriptor" type="-1"/>
+        <column name="au_dataEncryptionAtRest" type="12"/>
+        <column name="au_connectDashboardLogging" type="3"/>
+    </columnInfo>
+</data>
