@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
     <AU_TRANSACTION>
-        <au_advanced><![CDATA[1]]></au_advanced>
-        <au_description><![CDATA[This is the typical Get-Process-Send ETL flow. Process flow receives one source file using any protocol, parses it and maps it to target schema and finally delivers it to target.]]></au_description>
-        <au_retainVarXml><![CDATA[1]]></au_retainVarXml>
-        <au_loggingLevel><![CDATA[ERROR]]></au_loggingLevel>
-        <au_permissionMask><![CDATA[755]]></au_permissionMask>
-        <au_priority><![CDATA[NORMAL]]></au_priority>
+        <au_trackVariables><![CDATA[<?xml version="1.0"?><Variables><Variable><Name>Log_Message</Name><MappedVariable>FIELD3</MappedVariable></Variable><Variable><Name>Status</Name><MappedVariable>FIELD2</MappedVariable></Variable><Variable><Name>TargetErrorFile</Name><MappedVariable>FIELD7</MappedVariable></Variable><Variable><Name>FileOut</Name><MappedVariable>FIELD5</MappedVariable></Variable><Variable><Name>FileIn</Name><MappedVariable>FIELD4</MappedVariable></Variable><Variable><Name>Transmission_Id</Name><MappedVariable>FIELD1</MappedVariable></Variable><Variable><Name>Log_Date_Time</Name><MappedVariable>FIELD8</MappedVariable></Variable><Variable><Name>SourceErrorFile</Name><MappedVariable>FIELD6</MappedVariable></Variable></Variables>]]></au_trackVariables>
+        <au_templateName><![CDATA[Process Designer]]></au_templateName>
+        <au_childFlows><![CDATA[]]></au_childFlows>
+        <au_synchronized><![CDATA[0]]></au_synchronized>
+        <au_id><![CDATA[049138048006130021025657000002]]></au_id>
         <au_comments><![CDATA[null]]></au_comments>
-        <au_userOwner><![CDATA[IndigoUser:192168001205130027722316300009]]></au_userOwner>
-        <au_version><![CDATA[1]]></au_version>
-        <au_dataEncryptionAtRest><![CDATA[no]]></au_dataEncryptionAtRest>
+        <au_projectOwner><![CDATA[Default]]></au_projectOwner>
+        <au_loggingLevel><![CDATA[ERROR]]></au_loggingLevel>
         <au_flowDescriptor><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <AdeptiaPE xmlns:version = "4.7" xmlns:j = "jelly:core" xmlns:abpm = "jelly:com.adeptia.indigo.jelly.IndigoTagLibrary" xmlns:pd = "jelly:com.adeptia.indigo.pd.ProcessDesignerTagLibrary" xmlns = "jelly:com.werken.blissed.jelly.BlissedTagLibrary" >
 	<process name = "mainProcess" var = "mainProcess" start = "startState">
@@ -704,28 +702,30 @@ return false;
 		<transition from="state-BPMN:EVENT:START_EVENT-13023249" to="state-BPMN:TASK:BASIC_TASK-13023275"/>
 	</process>
 </AdeptiaPE>]]></au_flowDescriptor>
+        <au_retainVarXml><![CDATA[1]]></au_retainVarXml>
+        <au_realTimeConfiguration><![CDATA[0]]></au_realTimeConfiguration>
+        <au_revision><![CDATA[null]]></au_revision>
+        <au_description><![CDATA[This is the typical Get-Process-Send ETL flow. Process flow receives one source file using any protocol, parses it and maps it to target schema and finally delivers it to target.]]></au_description>
         <au_recoverable><![CDATA[0]]></au_recoverable>
+        <au_repositoryAction><![CDATA[L]]></au_repositoryAction>
+        <au_activeFlag><![CDATA[1]]></au_activeFlag>
+        <au_permissionMask><![CDATA[755]]></au_permissionMask>
         <au_activeVersion><![CDATA[1]]></au_activeVersion>
         <au_creationDate><![CDATA[2011-03-15T23:00:56]]></au_creationDate>
-        <au_id><![CDATA[049138048006130021025657000002]]></au_id>
-        <au_webPdXml><![CDATA[null]]></au_webPdXml>
-        <au_childFlows><![CDATA[]]></au_childFlows>
-        <au_realTimeConfiguration><![CDATA[0]]></au_realTimeConfiguration>
-        <au_templateName><![CDATA[Process Designer]]></au_templateName>
-        <au_previousVersion><![CDATA[]]></au_previousVersion>
-        <au_activeFlag><![CDATA[1]]></au_activeFlag>
-        <au_modifiedDate><![CDATA[2019-01-16T17:24:01]]></au_modifiedDate>
-        <au_entityName><![CDATA[Default_Data_Interfaces]]></au_entityName>
-        <au_connectDashboardLogging><![CDATA[0]]></au_connectDashboardLogging>
-        <au_OldFlowDescriptor><![CDATA[null]]></au_OldFlowDescriptor>
-        <au_repositoryAction><![CDATA[L]]></au_repositoryAction>
-        <au_revision><![CDATA[null]]></au_revision>
-        <au_trackVariables><![CDATA[<?xml version="1.0"?><Variables><Variable><Name>Log_Message</Name><MappedVariable>FIELD3</MappedVariable></Variable><Variable><Name>Status</Name><MappedVariable>FIELD2</MappedVariable></Variable><Variable><Name>TargetErrorFile</Name><MappedVariable>FIELD7</MappedVariable></Variable><Variable><Name>FileOut</Name><MappedVariable>FIELD5</MappedVariable></Variable><Variable><Name>FileIn</Name><MappedVariable>FIELD4</MappedVariable></Variable><Variable><Name>Transmission_Id</Name><MappedVariable>FIELD1</MappedVariable></Variable><Variable><Name>Log_Date_Time</Name><MappedVariable>FIELD8</MappedVariable></Variable><Variable><Name>SourceErrorFile</Name><MappedVariable>FIELD6</MappedVariable></Variable></Variables>]]></au_trackVariables>
-        <au_logRetentionAction><![CDATA[L]]></au_logRetentionAction>
         <au_groupOwner><![CDATA[IndigoGroup:192168001205130027715287200007]]></au_groupOwner>
+        <au_advanced><![CDATA[1]]></au_advanced>
+        <au_dataEncryptionAtRest><![CDATA[no]]></au_dataEncryptionAtRest>
+        <au_logRetentionAction><![CDATA[L]]></au_logRetentionAction>
+        <au_webPdXml><![CDATA[null]]></au_webPdXml>
+        <au_OldFlowDescriptor><![CDATA[null]]></au_OldFlowDescriptor>
+        <au_userOwner><![CDATA[IndigoUser:192168001205130027722316300009]]></au_userOwner>
+        <au_entityName><![CDATA[Default_Data_Interfaces]]></au_entityName>
+        <au_version><![CDATA[1]]></au_version>
         <au_modifiedBy><![CDATA[IndigoUser:127000000001107055536473900001]]></au_modifiedBy>
-        <au_projectOwner><![CDATA[Default]]></au_projectOwner>
-        <au_synchronized><![CDATA[0]]></au_synchronized>
+        <au_priority><![CDATA[NORMAL]]></au_priority>
+        <au_modifiedDate><![CDATA[2019-01-16T17:24:01]]></au_modifiedDate>
+        <au_previousVersion><![CDATA[]]></au_previousVersion>
+        <au_connectDashboardLogging><![CDATA[0]]></au_connectDashboardLogging>
     </AU_TRANSACTION>
     <columnInfo dbtype="4">
         <column name="au_id" type="12"/>
